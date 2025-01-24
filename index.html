@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo PMCE 2025</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Ícone da página -->
+
+    <link rel="stylesheet" href="css/style.css"> <!-- Link para o CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Font Awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <h1>Estudo PMCE 2025</h1>
+        <p>Prepare-se para o concurso da Polícia Militar do Ceará</p>
+        <div class="date-time" id="dateTime">
+            <i class="fas fa-calendar-day"></i> <span id="date"></span> | <i class="fas fa-clock"></i> <span id="time"></span>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+
+<div id="studySchedule">
+    <h2>Matérias para Estudar Hoje</h2>
+    <p><strong>Manhã:</strong> <span id="morningStudy">Carregando...</span></p>
+    <p><strong>Tarde:</strong> <span id="afternoonStudy">Carregando...</span></p>
+</div>
+
+    <div class="cards">
+        <!-- Card do Cronograma -->
+        <div class="card">
+            <h2><i class="fas fa-calendar-check"></i> Cronograma de Estudos</h2>
+            <p>Aqui está o cronograma de estudos para ajudá-lo a se preparar para o concurso da PMCE.</p>
+            <ul>
+               <li><a href="cronograma/Cronograma.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Cronograma PDF</a></li>
+            </ul>
+        </div>
+
+        <!-- Card das Matérias -->
+        <div class="card">
+            <h2><i class="fas fa-book-open"></i> Matérias de Estudo</h2>
+            <ul>
+                <li><a href="materiais/Atualidades.pdf" target="_blank"><i class="fas fa-newspaper"></i> Atualidades</a></li>
+                <li><a href="materiais/Historia-do-Ceara.pdf" target="_blank"><i class="fas fa-map-marked-alt"></i> História do Ceará</a></li>
+                <li><a href="materiais/Noções-de-Administracao-Publica.pdf" target="_blank"><i class="fas fa-chalkboard-teacher"></i> Noções de Administração Pública</a></li>
+                <li><a href="materiais/Noções-de-Criminologia.pdf" target="_blank"><i class="fas fa-gavel"></i> Noções de Criminologia</a></li>
+                <li><a href="materiais/Noções-de-Direito-Constitucional.pdf" target="_blank"><i class="fas fa-balance-scale"></i> Noções de Direito Constitucional</a></li>
+                <li><a href="materiais/Noções-de-Direito-Penal-Militar.pdf" target="_blank"><i class="fas fa-shield-alt"></i> Noções de Direito Penal Militar</a></li>
+                <li><a href="materiais/Noções-de-Direito-Penal.pdf" target="_blank"><i class="fas fa-gavel"></i> Noções de Direito Penal</a></li>
+                <li><a href="materiais/Noções-de-Direitos-Humanos.pdf" target="_blank"><i class="fas fa-hand-holding-heart"></i> Noções de Direitos Humanos</a></li>
+                <li><a href="materiais/Portugues.pdf" target="_blank"><i class="fas fa-book"></i> Português</a></li>
+                <li><a href="materiais/Raciocinio-Logico.pdf" target="_blank"><i class="fas fa-calculator"></i> Raciocínio Lógico</a></li>
+               <li><a href="materiais/Seguranca-Publica.pdf" target="_blank"><i class="fas fa-shield-alt"></i> Segurança Pública PDF</a></li>
+            </ul>
+        </div>
+
+        <!-- Card do Simulado -->
+        <div class="card">
+            <h2><i class="fas fa-clipboard-list"></i> Simulado</h2>
+            <p>Baixe o simulado para testar seus conhecimentos e avaliar seu progresso nos estudos.</p>
+            <ul>
+               <li><a href="simulados/Simulado.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Simulado PDF 2024</a></li>
+            </ul>
+        </div>
+
+        <!-- Card Bizu -->
+        <div class="card">
+            <h2><i class="fas fa-lightbulb"></i> Bizu</h2>
+            <p>Confira essas dicas e tarefas para otimizar sua preparação!</p>
+            <ul>
+                <li>Estude todos os dias, sem procrastinar.</li>
+                <li>Faça simulados para testar seus conhecimentos.</li>
+                <li>Não se esqueça de cuidar da saúde: alimentação e exercícios físicos são fundamentais!</li>
+                <li>Organize seu tempo.</li>
+                <li>Faça revisões constantes.</li>
+                <li>Não deixe para estudar na última hora!</li>
+                <li>A preparação contínua é fundamental para o sucesso.</li>
+            </ul>
+        </div>
+
+        <!-- Card Edital -->
+        <div class="card">
+            <h2><i class="fas fa-file-alt"></i> Edital</h2>
+            <p>Acesse o edital completo do concurso da PMCE.</p>
+            <ul>
+               <li><a href="editais/EDITAL2024.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Edital 2024 PDF</a></li>
+            </ul>
+        </div>
+
+        <!-- Card YouTube e ChatGPT -->
+        <div class="card">
+            <h2><i class="fab fa-youtube"></i> YouTube e ChatGPT</h2>
+            <p>Confira vídeos educativos no YouTube e interaja com o ChatGPT para aprender mais!</p>
+            <ul>
+            <li><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i> Canal Educativo no YouTube</a></li>
+            <li><a href="https://chat.openai.com" target="_blank"><i class="fas fa-robot"></i> Acesse o ChatGPT</a></li> 
+            </ul>
+        </div>
+    </div>
+</main>
+
+<!-- Rodapé -->
+<footer class="footer">
+    <p>&copy; 2025 Estudo PMCE | Desenvolvido Por Diego Reis.</p>
+    <p><a href="https://www.instagram.com/heydiegr" target="_blank">@heydiegr</a></p>
+</footer>
+
+<script src="js/script.js"></script> <!-- Link para o JS -->
+</body>
+</html>

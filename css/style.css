@@ -1,0 +1,311 @@
+/* Importando a fonte Jura */
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;500;600;700&display=swap');
+
+/* Estilo base */
+body {
+    font-family: 'Jura', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background: linear-gradient(to bottom, #1a1a1a, #111111);
+    letter-spacing: 0.5px;
+    animation: fadeIn 1s ease-in-out;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    border: 2px solid #00bcd4;
+    border-top: 10px;
+    background: linear-gradient(to right, #16292c, #1d555d);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    animation: slideIn 1.5s ease-out, borderColorLoop 5s infinite; /* Animações combinadas */
+}
+
+header h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    text-transform: uppercase;
+    animation: glow 2s infinite alternate;
+}
+
+header p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Container principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Cartões */
+main .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: linear-gradient(to right, #16292c, #1d555d);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 calc(33.333% - 20px);
+    border-radius: 10px;
+    animation: scaleUp 1s ease-in-out, borderColorLoop 5s infinite;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    color: #00bcd4;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.card ul li {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    padding-left: 25px;
+    position: relative;
+    line-height: 1.5;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.card ul li:before {
+    content: '\2022';
+    color: #00bcd4;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.card ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.card ul li a:hover {
+    color: #00bcd4;
+}
+
+/* Rodapé */
+footer {
+    border: 2px solid #00bcd4;
+    border-bottom: 10px;
+    background: linear-gradient(to right, #16292c, #1d555d);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+    animation: slideIn 1.5s ease-out, borderColorLoop 5s infinite;
+}
+
+footer a {
+    color: #ff9800;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #00bcd4;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #00bcd4, 0 0 10px #00bcd4, 0 0 20px #00bcd4;
+    }
+    100% {
+        text-shadow: 0 0 20px #ff9800, 0 0 30px #ff9800, 0 0 40px #ff9800;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes borderColorLoop {
+    0% {
+        border-color: #00bcd4;
+    }
+    50% {
+        border-color: #ff9800;
+    }
+    100% {
+        border-color: #00bcd4;
+    }
+}
+
+@keyframes contentColorLoop {
+    0% {
+        color: #00bcd4;
+    }
+    50% {
+        color: #ff9800;
+    }
+    100% {
+        color: #00bcd4;
+    }
+}
+
+/* Responsividade geral */
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 3rem;
+    }
+    header p {
+        font-size: 1.3rem;
+    }
+    .card {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+    header p {
+        font-size: 1.2rem;
+    }
+    .card {
+        flex: 1 1 100%;
+    }
+    .container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    header p {
+        font-size: 1rem;
+    }
+    .card {
+        padding: 15px;
+    }
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+/* Estilo do estudo */
+#studySchedule {
+    text-align: center;
+    background: rgba(0, 188, 212, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    animation: bounce 3s infinite;
+}
+
+/* Títulos com animação */
+h2, h2 * {
+    animation: contentColorLoop 5s infinite;
+}
+
+h2 {
+    font-size: 2.0rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 i {
+    margin-right: 10px;
+}
+
+
+/* Animação para bordas */
+@keyframes borderColorLoop {
+    0% {
+        border-color: #00bcd4; /* Cor inicial */
+    }
+    50% {
+        border-color: #ff9800; /* Cor intermediária */
+    }
+    100% {
+        border-color: #00bcd4; /* Retorno à cor inicial */
+    }
+}
+
+/* Aplicar animação de borda nos elementos */
+footer, header,  {
+    border: 2px solid #00bcd4;
+    border-bottom: 10px;
+    animation: borderColorLoop 5s infinite; /* A animação será contínua em loop */
+}
+
+.card, #studySchedule {
+    border: 2px solid #00bcd4;
+    border-radius: 10px;
+    animation: borderColorLoop 5s infinite; /* A animação será contínua em loop */
+}
